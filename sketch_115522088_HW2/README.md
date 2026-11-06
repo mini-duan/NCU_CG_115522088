@@ -65,3 +65,7 @@
 ## LLM 使用說明
 
 本次作業使用 Claude 輔助:協助理解作業需求與 Processing 專案的開啟方式、撰寫與檢查 `Matrix4`、`pnpoly`、`findBoundBox`、`Sutherland_Hodgman_algorithm` 的實作。`CGLine` 為自己在 HW1 完成的程式碼。最後由我自行在 Processing 中執行並確認結果。
+
+##截圖位置
+
+sketch_115522088_HW2/截圖/螢幕擷取畫面 2026-11-06 115107.png
