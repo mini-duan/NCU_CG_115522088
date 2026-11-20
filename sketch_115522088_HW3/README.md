@@ -132,21 +132,8 @@ float d = constrain(zView / 20.0, 0, 1);
 
 ## 截圖
 
-### Model 矩陣 / Inspector 控制
+###位置: sketch_115522088_HW3/data/截圖
 
-![inspector](sketch_115522088_HW3/data/截圖/01_inspector.png)
-
-### Depth buffer(關閉線框)
-
-![depth](sketch_115522088_HW3/data/截圖/02_depth.png)
-
-### 相機控制
-
-![camera](sketch_115522088_HW3/data/截圖/03_camera.png)
-
-### Backface culling
-
-![culling](sketch_115522088_HW3/data/截圖/04_culling.png)
 
 ## LLM 使用說明
 
