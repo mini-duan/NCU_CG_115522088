@@ -10,7 +10,7 @@
 | View 矩陣 | `Camera.setPositionOrientation` | Camera.pde | 完成 |
 | Projection 矩陣 | `Camera.setSize` | Camera.pde | 完成 |
 | Depth buffer | `getDepth`、`GameObject.Draw` | util.pde、GameObject.pde | 完成 |
-| 相機控制 | `cameraControl` | HW3.pde | 完成 |
+| 相機控制 | `cameraControl` | sketch_115522088_HW3.pde | 完成 |
 | Backface culling | `GameObject.debugDraw` | GameObject.pde | 完成 |
 | (前置)直線繪製 | `CGLine`(沿用 HW1,Bresenham) | util.pde | 完成 |
 | (加分)3D Clipping | - | - | 未實作 |
@@ -132,21 +132,29 @@ float d = constrain(zView / 20.0, 0, 1);
 
 ## 截圖
 
-### Model 矩陣 / Inspector 控制
+### 1. Depth buffer(關閉線框)
 
-![inspector](sketch_115522088_HW3/data/截圖/01_inspector.png)
+以 Inspector 調整 position、rotation、scale 後,關閉 debug 線框,只顯示深度緩衝的灰階結果。離相機越近顏色越深。
 
-### Depth buffer(關閉線框)
+![depth](<data/截圖/螢幕擷取畫面 2026-11-20 132306.png>)
 
-![depth](sketch_115522088_HW3/data/截圖/02_depth.png)
+### 2. Backface culling(三個面可見)
 
-### 相機控制
+開啟線框,可以看到三個朝向相機的面。被遮住的背面邊沒有畫出,線框與填色的輪廓完全對齊。
 
-![camera](sketch_115522088_HW3/data/截圖/03_camera.png)
+![culling-1](<data/截圖/螢幕擷取畫面 2026-11-20 133014.png>)
 
-### Backface culling
+### 3. Backface culling(兩個面可見)
 
-![culling](sketch_115522088_HW3/data/截圖/04_culling.png)
+換一個旋轉角度後只剩兩個面朝向相機,線框也只畫出這兩個面的邊。
+
+![culling-2](<data/截圖/螢幕擷取畫面 2026-11-20 133027.png>)
+
+### 4. 相機控制
+
+模型的 rotation 皆為 0,但畫面中看得到方塊的側面,且模型偏到畫面左側,表示這是以 WASD / QE 移動相機並用滑鼠拖曳轉動視角所造成,而不是模型本身的旋轉。模型離相機較遠,所以深度灰階也較淡。
+
+![camera](<data/截圖/螢幕擷取畫面 2026-11-20 135022.png>)
 
 ## LLM 使用說明
 
